@@ -1,0 +1,24 @@
+<pl-question-panel>
+  <p>
+    The question below was designed to showcase the different features of
+    <code>pl-interactive-visualizer</code>. This element creates a 3-dimensional plot of a function 
+    that users can rotate, zoom, and place points on. This is a decorative element, and placed points 
+    are not saved and graded in the current version. For grading, the element should be combined with
+    with `pl-number-input` or other elements where students enter and submit numeric coordinates. 
+  </p>
+  <p>
+    See the other example questions for more realistic question setups and randomization examples.
+  </p>
+
+<div class="card my-2">
+  <div class="card-header">Element Demo</div>
+  <div class="card-body">
+    <p>Below is an example of a function visualization for $3x+x^2y+|y|$, written as the <code>function</code> 
+    expression <code>3*x+x**2*y+abs(y)</code>. The parameter <code>place</code> is set to <code>true</code> to allow students to 
+    select up to 4 points that are displayed next to the function. These points are not saved or 
+    graded unless they are manually entered into a different element, such as <code>pl-number-input</code>.</p>
+     <pl-interactive-visualizer function="3*x+x**2*y+sin(y)" place="true"></pl-interactive-visualizer>
+  </div>
+</div>
+</pl-question-panel>
+

@@ -1,8 +1,30 @@
-# Welcome to PrairieLearn!
+# PrairieLearn OER Element: 3D Function Visualizer
 
-The content for your course is stored within this repository. You can see and edit a live version at [https://prairielearn.com](https://prairielearn.com).
+This element was developed by James Geronimo, Malavikha Sudarshan, and Sean Lim. Please carefully test the element and understand its features and limitations before deploying it in a course. It is provided as-is and not officially maintained by PrairieLearn, so we can only provide limited support for any issues you encounter!
 
-## Support
+If you like this element, you can use it in your own PrairieLearn course by copying the contents of the `elements` folder into your own course repository. After syncing, the element can be used as illustrated by the example question that is also contained in this repository.
 
-For help setting up your course or creating content, visit [https://prairielearn.com/support](https://prairielearn.com/support).
 
+## `pl-interactive-visualizer` element
+
+This element creates a 3-dimensional plot of a function that users can rotate, zoom, and place points on. This is a decorative element, and placed points are not saved and graded in the current version. For grading, consider combining this element with `pl-number-input` or other elements where students enter and submit numeric coordinates. See the example questions for some suggested use cases and setups.
+
+The number of points that can be placed at once is limited to 4, and this feature can be toggled on or off by the instructor. The inputted function must be a string that contains a mathematical expression depending on `x` and `y`. Apart from basic arithmetic, the expression supports the following operations: `sin`, `cos`, `tan`, `exp`, `log`, `sqrt`, `pow`, `abs`, `min`, and `max`. 
+
+### Example
+
+<img src="example.png" width="300">
+
+```html
+<pl-interactive-visualizer 
+    function="3*x+x**2*y+y" 
+    place="true">
+</pl-interactive-visualizer>
+```
+
+### Element Attributes
+
+| Attribute | Type | Description |
+|-----------|------|-------------|
+| `function` | string (required) | A two-variable function expression containing `x` and `y` that is to be plotted. It should be formatted like a Python math expression and supports basic arithmetic operations, as well as the following functions: `sin`, `cos`, `tan`, `exp`, `log`, `sqrt`, `pow`, `abs`, `min`, and `max`. |
+| `place` | boolean (default: `true`) | If set to `true`, users are able to place up to 4 points on the graph. This also renders the appropriate instructions and "Clear Point" button to clear all points. |
