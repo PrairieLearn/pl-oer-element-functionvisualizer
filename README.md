@@ -4,6 +4,7 @@ This element was developed by James Geronimo, Malavikha Sudarshan, and Sean Lim.
 
 If you like this element, you can use it in your own PrairieLearn course by copying the contents of the `elements` folder into your own course repository. After syncing, the element can be used as illustrated by the example question that is also contained in this repository.
 
+📌 [View our Poster](poster.pdf)
 
 ## `pl-interactive-visualizer` element
 
