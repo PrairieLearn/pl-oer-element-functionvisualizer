@@ -10,15 +10,15 @@ If you like this element, you can use it in your own PrairieLearn course by copy
 
 This element creates a 3-dimensional plot of a function that users can rotate, zoom, and place points on. This is a decorative element, and placed points are not saved and graded in the current version. For grading, consider combining this element with `pl-number-input` or other elements where students enter and submit numeric coordinates. See the example questions for some suggested use cases and setups.
 
-The number of points that can be placed at once is limited to 4, and this feature can be toggled on or off by the instructor. The inputted function must be a string that contains a mathematical expression depending on `x` and `y`. Apart from basic arithmetic, the expression supports the following operations: `sin`, `cos`, `tan`, `exp`, `log`, `sqrt`, `pow`, `abs`, `min`, and `max`. 
+The number of points that can be placed at once is limited to 4, and this feature can be toggled on or off by the instructor. The entered function must be a string that contains a mathematical expression depending on `x` and `y`. Apart from basic arithmetic, the expression supports the following operations: `sin`, `cos`, `tan`, `exp`, `log`, `sqrt`, `pow`, `abs`, `min`, and `max`.
 
 ### Example
 
 <img src="example.png" width="300">
 
 ```html
-<pl-interactive-visualizer 
-    function="3*x+x**2*y+y" 
+<pl-interactive-visualizer
+    function="3*x+x**2*y+y"
     place="true">
 </pl-interactive-visualizer>
 ```
